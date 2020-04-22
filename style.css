@@ -1,0 +1,27 @@
+body{
+  background-image: url("./bpic2.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+#calculator {
+  margin-top:10%;
+  margin-left: 10%;
+}
+
+#input1 {
+  width: 300px;
+}
+
+#footer{
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  background-color: gray;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: right;
+  clear: both;
+  color: white;
+}
