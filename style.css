@@ -11,11 +11,15 @@ body{
   width: 310px
 }
 
-#input1 {
+.ui.input {
   width: 310px;
-  height: 60px;
+  height: 65px;
   padding: 5px;
   margin: 0px 0px;
+}
+
+#input1{
+  text-align: right;
 }
 
 .ui.inverted.button {
@@ -25,10 +29,13 @@ body{
   font-size: 18px;
   text-align: center;
   font-style: bold;
+  cursor: pointer;
 }
 
 #equal {
   color: lightblue;
+  font-size:18px;
+  font-style:bold;
 }
 
 #footer{
