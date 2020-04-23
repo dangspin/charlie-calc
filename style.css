@@ -8,10 +8,27 @@ body{
 #calculator {
   margin-top:10%;
   margin-left: 10%;
+  width: 310px
 }
 
 #input1 {
-  width: 300px;
+  width: 310px;
+  height: 60px;
+  padding: 5px;
+  margin: 0px 0px;
+}
+
+.ui.inverted.button {
+  margin-left:0.5px;
+  width: 69.0px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-style: bold;
+}
+
+#equal {
+  color: lightblue;
 }
 
 #footer{
