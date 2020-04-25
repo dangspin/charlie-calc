@@ -1,19 +1,33 @@
+/*html {
+    background: url(./bpic2.jpeg) no-repeat center center fixed #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+}*/
+
 body{
   background-image: url("./bpic2.jpeg");
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
 
 #calculator {
   margin-top:10%;
   margin-left: 10%;
-  width: 310px
+  width: 310px;
+  border:1px solid #000;
+  background-color: #BC8F8F;
+  font-size: large;
 }
 
 .ui.input {
   width: 310px;
-  height: 65px;
+  height: 70px;
   padding: 5px;
   margin: 0px 0px;
 }
@@ -22,14 +36,21 @@ body{
   text-align: right;
 }
 
-.ui.inverted.button {
-  margin-left:0.5px;
-  width: 69.0px;
-  color: white;
+.button {
+  margin-left:1.0px;
+  margin-right: 0.8px;
+  width: 70.25px;
+  height: 60px;
+  color: #663399;
   font-size: 18px;
   text-align: center;
   font-style: bold;
   cursor: pointer;
+
+}
+
+#bk {
+  text-align: center;
 }
 
 #equal {
@@ -39,7 +60,7 @@ body{
 }
 
 #footer{
-  position:absolute;
+  position: fixed;
   bottom:0;
   width: 100%;
   background-color: gray;
