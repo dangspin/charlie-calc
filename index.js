@@ -6,6 +6,9 @@ $(document).ready(function(){
   $(".button, .operator").click(function () {
     if (isFinished === false) {
       $("#input1").val($("#input1").val() + $(this).text());
+    } else if (isFinished === true && isNaN($(this).text())){
+      isFinished = false;
+      $("#input1").val($("#input1").val() + $(this).text());
     } else {
       isFinished = false;
       $("#input1").val($(this).text());
