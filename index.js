@@ -1,6 +1,41 @@
 $(document).ready(function(){
-  $(".button").click(function () {
-    $("#input1").val($("#input1").val() + $(this).text());
+  var screen = $("#input1");
+  var isFinished = false;
+
+
+  $(".button, .operator").click(function () {
+    if (isFinished === false) {
+      $("#input1").val($("#input1").val() + $(this).text());
+    } else {
+      isFinished = false;
+      $("#input1").val($(this).text());
+    }
+  })
+
+  $(".clc").click(()=> {
+    $("#input1").val("");
+  })
+
+  $(".equal").click(()=> {
+    $("#input1").val(eval($("#input1").val()));
+    isFinished = true;
+  })
+
+  $(".back").click(()=> {
+    var str = $("#input1").val()
+    $("#input1").val(str.substring(0, str.length-1));
+  })
+
+  $(".recip").click(()=> {
+    var num = parseInt($('#input1').val());
+    var num = 1/num;
+    $('#input1').val(num.toString());
+  })
+
+  $(".sqrt").click(()=> {
+    var num = parseInt(screen.val());
+    var num = Math.sqrt(num);
+    $("#input1").val(num.toString());
   })
 });
 
