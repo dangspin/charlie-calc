@@ -1,11 +1,10 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
+  $(".button").click(function () {
+    $("#input1").val($("#input1").val() + $(this).text());
+  })
+});
 
-  function insert(num) {
-    $("#input1").val($("#input1").val() + num);
-  }
-});*/
-
-var isFinished = false;
+/* var isFinished = false;
 
 function insert(num) {
   if (isFinished === false) {
@@ -40,4 +39,4 @@ function reci() {
   var num = parseInt($('#input1').val());
   var num = 1/num;
   $('#input1').val(num.toString());
-}
+} */
