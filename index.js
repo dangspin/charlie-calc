@@ -36,7 +36,7 @@ $(document).ready(function(){
   })
 
   $(".sqrt").click(()=> {
-    var num = parseInt(screen.val());
+    var num = parseFloat(screen.val());
     var num = Math.sqrt(num);
     $("#input1").val(num.toString());
   })
