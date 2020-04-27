@@ -3,7 +3,7 @@ $(document).ready(function(){
   var isFinished = false;
 
 
-  $(".button, .operator").click(function () {
+  $(".button.num, .button.operator").click(function () {
     if (isFinished === false) {
       $("#input1").val($("#input1").val() + $(this).text());
     } else if (isFinished === true && isNaN($(this).text())){
@@ -15,7 +15,7 @@ $(document).ready(function(){
     }
   })
 
-  $(".clc").click(()=> {
+  $(".button.clc").click(()=> {
     $("#input1").val("");
   })
 
