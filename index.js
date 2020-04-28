@@ -19,26 +19,28 @@ $(document).ready(function(){
     $("#input1").val("");
   })
 
-  $(".equal").click(()=> {
+  $(".button.equal").click(()=> {
     $("#input1").val(eval($("#input1").val()));
     isFinished = true;
   })
 
-  $(".back").click(()=> {
+  $(".button.back").click(()=> {
     var str = $("#input1").val()
     $("#input1").val(str.substring(0, str.length-1));
   })
 
-  $(".recip").click(()=> {
+  $(".button.recip").click(()=> {
     var num = parseInt($('#input1').val());
     var num = 1/num;
     $('#input1').val(num.toString());
+    isFinished = true;
   })
 
-  $(".sqrt").click(()=> {
+  $(".button.sqrt").click(()=> {
     var num = parseFloat(screen.val());
     var num = Math.sqrt(num);
     $("#input1").val(num.toString());
+    isFinished = true;
   })
 });
 
